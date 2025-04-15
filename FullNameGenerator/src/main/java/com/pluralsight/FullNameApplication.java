@@ -1,6 +1,5 @@
 package com.pluralsight;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class FullNameApplication {
@@ -16,9 +15,10 @@ public class FullNameApplication {
         String suffix=input.nextLine().trim();
         // build full name
         String fullName=firstName.substring(0,1).toUpperCase()+firstName.substring(1).toLowerCase();
-        if (!middleName.isEmpty()){
-            fullName+=" "+middleName.substring(0,1).toUpperCase()+middleName.substring(1).toLowerCase();
-        fullName +=" "+lastName.substring(0,1).toUpperCase()+lastName.substring(1).toLowerCase();}
+        if (!middleName.isEmpty()) {
+            fullName += " " + middleName.substring(0, 1).toUpperCase() + middleName.substring(1).toLowerCase();
+        }
+        fullName +=" "+lastName.substring(0,1).toUpperCase()+lastName.substring(1).toLowerCase();
        if (!suffix.isEmpty()){
            fullName+= " "+suffix.toUpperCase();
       }
