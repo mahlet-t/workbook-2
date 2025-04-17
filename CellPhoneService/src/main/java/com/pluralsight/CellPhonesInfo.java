@@ -49,7 +49,7 @@ public class CellPhonesInfo {
         display(phone1);
         display(phone2);
         CellPhone phone3=new CellPhone(123456,"iphone6","AT@T","123-456-7890","beti");
-        phone1.dial(phone3.getPhoneNumber());
+        phone1.dial(phone3);
         display(phone3);
     }
 
