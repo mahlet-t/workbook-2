@@ -29,25 +29,40 @@ public class CellPhonesInfo {
         System.out.println("Phone Number: " + phone.getPhoneNumber());
         System.out.println("owner: " + phone.getOwner());
         System.out.println("\n\n.........................................................................");
+        //
         CellPhone phone1 = new CellPhone();
         phone1.setOwner("Mahlet");
         phone1.setPhoneNumber("657-908-9876");
+        phone1.setCarrier("At@T");
+        phone1.setModel("iphone 6");
+        phone1.setSerialNumber(1234567);
         CellPhone phone2 = new CellPhone();
         phone2.setOwner("dana");
-        phone2.setPhoneNumber("675-987-0987");
-        phone1.dial(phone2.getPhoneNumber());
+        phone2.setPhoneNumber("444-000-4444");
+        phone2.setCarrier("At@T");
+        phone2.setModel("iphone 6");
         phone2.dial(phone1.getPhoneNumber());
+        phone1.dial(phone2.getPhoneNumber());
+        phone1.dial(phone2);
+        phone2.dial(phone1);
         System.out.println("\n..............................................................................");
         display(phone1);
         display(phone2);
+        CellPhone phone3=new CellPhone(123456,"iphone6","AT@T","123-456-7890","beti");
+        phone1.dial(phone3.getPhoneNumber());
+        display(phone3);
     }
 
     public static void display(CellPhone phone) {
         System.out.println("owner:" + phone.getOwner());
         System.out.println("Phone Number: " + phone.getPhoneNumber());
+        System.out.println("Carrier: "+phone.getCarrier());
+        System.out.println("model: "+phone.getModel());
+        System.out.println("Serial Number: "+phone.getSerialNumber());
         System.out.println();
 
     }
+
 
 }
 
