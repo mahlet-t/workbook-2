@@ -48,6 +48,10 @@ public class CellPhone {
     public String getOwner(){
         return owner;
     }
+  public void dial(String phoneNumber) {
+        System.out.println(owner+"'s phone is calling "+phoneNumber);
+  }
 }
+
 
 
