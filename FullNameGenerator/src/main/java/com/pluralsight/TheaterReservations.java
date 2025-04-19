@@ -14,10 +14,12 @@ public class TheaterReservations {
                 String[] fullName = name.split(" ");
                 System.out.println("What date will you be coming(MM/dd/yyyy");
                 String inputDate = input.nextLine();
+
                 DateTimeFormatter dateTimeFormatter;
                 dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
                 LocalDate date = LocalDate.parse(inputDate, dateTimeFormatter);
                 System.out.println("How many Tickets would you like?");
+
                 int ticket = input.nextInt();
                 input.nextLine();
                 if (ticket > 1) {

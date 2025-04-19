@@ -17,7 +17,7 @@ public class CellPhone {
     }
     // overloaded constructor
     public CellPhone(int serialNumber,String model,String carrier,String phoneNumber,String owner ){
-        this.serialNumber=serialNumber;
+        th`is.serialNumber=serialNumber;
         this.model=model;
         this.carrier=carrier;
         this.phoneNumber=phoneNumber;
